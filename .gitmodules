@@ -1,0 +1,6 @@
+[submodule "bqn-pcre2"]
+	path = bqn-pcre2
+	url = https://github.com/frasiyav/bqn-pcre2.git
+[submodule "bqn-libs"]
+	path = bqn-libs
+	url = https://github.com/mlochbaum/bqn-libs.git
