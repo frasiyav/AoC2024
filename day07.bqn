@@ -1,7 +1,7 @@
 ⟨ ToNats, Split ⟩ ← •Import "bqn-libs/strings.bqn"
 
 i ← •file.Lines "input07.txt"
-t ← ⊑¨c ← ⊑⌾⊑¨ ToNats⚇1 ':' Split¨ i
+t ← ⊑¨c ← (⊑⋈1↓⊢)∘ToNats¨ i
 
 DC ← -÷10⋆1+·⌊10⋆⁼⊢
 
