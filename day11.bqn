@@ -1,6 +1,6 @@
 ⟨ ToNums ⟩ ← •Import "bqn-libs/strings.bqn"
 
-i ← ToNums ⊑•file.Lines "input11.txt"
+i ← ToNums •file.Chars "input11.txt"
 
 ND ← ⌊1+•math.Log10
 SD ← 10⊸⋆⊸(⌊∘÷˜⋈|)
