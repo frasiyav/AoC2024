@@ -1,7 +1,7 @@
 i ← >•file.Lines "input12.txt"
 
-_fix ⇐ { 𝔽∘⊢⍟≢⟜𝔽_fix∘⊢⍟≢⟜𝔽 𝕩 }
-Pad ⇐ ⊢↑˝·≍⟜¬2+≢
+_fix ← { 𝔽∘⊢⍟≢⟜𝔽_fix∘⊢⍟≢⟜𝔽 𝕩 }
+Pad ← ⊢↑˝·≍⟜¬2+≢
 S ← «˘∾»˘∾«≍»
 
 Flood ← {(1↓·⊐0∾⊢)⌾⥊ (××⌈˝⟜S)_Fix +`⌾⥊⊸×𝕩}
@@ -16,5 +16,5 @@ corners ← [
   [[0‿1‿0‿0,1‿1‿0‿1,0‿1‿1‿0],[1‿0‿0‿0,1‿1‿1‿0,1‿0‿0‿1]]
 ]
 
-•Show Cost (+˝≠⎉2⟜S)plots
-•Show Cost {+´⥊corners((1‿1⊑𝕩)=⥊)⊸∊˜⎉2 2‿2↕𝕩}⎉2 3‿3↕Pad plots
+•Show Cost +˝ ≠⎉2⟜S plots
+•Show Cost (+´∘⥊ corners ∊˜⟜⥊⎉2 1‿1⊸⊑=2‿2↕⊢)⎉2 3‿3↕Pad plots
