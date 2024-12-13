@@ -7,7 +7,7 @@ S ← «˘∾»˘∾«≍»
 m ← =⎉2⟜S i
 plots ← 1+ ⊐⌾⥊ (⊢⌈˝m×S)_fix ↕∘≠⌾⥊i
 areas ← /⁼⥊plots
-Cost ← +´ areas×·+´¨plots ⊔○⥊ ⊢
+Cost ← +´ areas×·+´¨plots⊔⊢
 
 corners ← [
   [[0‿0‿0‿1,0‿1‿1‿1,1‿0‿0‿1],[0‿0‿1‿0,1‿0‿1‿1,0‿1‿1‿0]]
